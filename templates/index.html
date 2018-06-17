@@ -1,10 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    <h1>a site</h1>
-</body>
-</html>
+{% extends 'layout.html' %}
+{% block title %} Fantastic {% endblock %}
+
+    {% block content %}
+        <div class="container">
+            {% include 'navbar.html' %}
+            <div class="jumbotron mb-5">
+                <h1 class="display-4">Who is who? The ultimate memory-game! </h1>
+                <p class="lead">Who is who is an informative memory game, which includes famous, infamous and defamed historical persons.</p>
+                <p class="lead">The aim of the game is to have fun, explore other peoples life and last but not least improve your memory.</p>
+            </div>
+        </div>
+    {% endblock %}

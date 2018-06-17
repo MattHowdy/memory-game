@@ -5,8 +5,15 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    seq = list(range(1,21))
+    return render_template('index.html', seq=seq)
 
+
+@app.route('/game', methods=['GET', 'POST'])
+def game():
+    number = request.form.get('comp_select')
+
+    return render_template('the-game.html', number=number)
 
 
 
