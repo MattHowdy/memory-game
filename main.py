@@ -11,10 +11,10 @@ def index():
 
 @app.route('/game', methods=['GET', 'POST'])
 def game():
-    num = request.form.get('comp_select')
-    number = list(range(1, int(num)+1))
+    number = int(request.form.get('comp_select'))*2
+    cards = list(range(1, int(number)+1))
 
-    return render_template('the-game.html', number=number)
+    return render_template('the-game.html', cards=cards)
 
 
 
