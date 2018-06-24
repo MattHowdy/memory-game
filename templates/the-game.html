@@ -8,13 +8,9 @@
             <h1>Find the pairs</h1>
 
             <div class="row">
-                {% for item in number %}
-                    <div class="cards col-lg-2 col-md-4 col-sm-6 my-2 border rounded">
-                        <i class="fas fa-crow fa-7x"></i>
-{#                        <img src="{{ url_for('static', filename='img/who-is-who.jpg') }}" class="rounded img-thumbnail img-fluid" alt="">#}
-                    </div>
-                    <div class="cards col-lg-2 col-md-4 col-sm-6 my-2 border rounded">
-                        <i class="fas fa-crow fa-7x"></i>
+                {% for card in cards %}
+                    <div class="cards col-lg-2 col-md-4 col-sm-6 my-2 rounded">
+                        <i class="icon fas fa-crow fa-7x"></i>
 {#                        <img src="{{ url_for('static', filename='img/who-is-who.jpg') }}" class="rounded img-thumbnail img-fluid" alt="">#}
                     </div>
                 {% endfor %}
