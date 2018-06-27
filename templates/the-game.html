@@ -9,8 +9,8 @@
 
             <div class="row">
                 {% for card in cards %}
-                    <div class="cards col-lg-2 col-md-4 col-sm-6 my-2 rounded">
-                        <i class="icon fas fa-crow fa-7x"></i>
+                    <div class="cards col-lg-2 col-md-4 col-sm-6 my-2 rounded" id="{{ card }}">
+                        <i class="icon fas fa-crow fa-7x" id="{{ card }}"></i>
 {#                        <img src="{{ url_for('static', filename='img/who-is-who.jpg') }}" class="rounded img-thumbnail img-fluid" alt="">#}
                     </div>
                 {% endfor %}
